@@ -12,6 +12,7 @@ html {
   right: 15px;
   font-size: 10px;
 }
+
 app-root {
   height: 100vh;
   display: flex;
@@ -24,7 +25,6 @@ app-root {
   background: #fafafa;
   border: #666 dashed 1px;
   border-radius: 5px;
-
   min-width: 25px;
   min-height: 25px;
   display: flex;
@@ -40,6 +40,7 @@ app-widget {
   border-radius: 15px;
   box-shadow: 0 3px 1px -2px #0003, 0 2px 2px #00000024, 0 1px 5px #0000001f;
   margin-bottom: 10px;
+
   button {
     display: block;
     margin: 0 auto;
@@ -48,6 +49,7 @@ app-widget {
     border-radius: 3px;
   }
 }
+
 .widget-actions {
   background-color: #fafafa;
   border-top: #eceff1 1px solid;
@@ -58,6 +60,7 @@ app-widget {
   display: flex;
   justify-content: center;
 }
+
 .widget-actions button {
   margin: 0 5px;
   background-color: #ffd044;
@@ -67,25 +70,31 @@ app-widget {
   color: #4d2e23;
   font-weight: 600;
 }
+
 .widget-actions button:hover {
   background-color: #ffd65c;
 }
+
 .widget-actions button:active {
   background-color: #e7b51f;
 }
+
 .widget-header {
   position: relative;
   border-bottom: #eceff1 1px solid;
   margin: 0 -10px 0 -10px;
   padding: 0 15px 15px 15px;
 }
+
 .widget-title {
   font-size: 24px;
   font-weight: bold;
 }
+
 .widget-sub-title {
   font-size: 13px;
 }
+
 .widget-content {
   padding: 30px 0;
   display: flex;
@@ -93,9 +102,11 @@ app-widget {
   align-items: center;
   flex-direction: column;
 }
+
 .sky-condition {
   font-size: 48px;
 }
+
 app-button button {
   display: flex;
   align-items: center;
@@ -104,6 +115,7 @@ app-button button {
   border-radius: 5px;
   cursor: pointer;
 }
+
 .no-content {
   padding: 30px 10px;
   border: #ccc dashed 1px;
@@ -113,6 +125,7 @@ app-button button {
   font-size: 12px;
   text-align: center;
 }
+
 .widget-content {
   padding: 10px;
 }

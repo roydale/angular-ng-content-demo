@@ -1,0 +1,21 @@
+<app-widget>
+  <span slot="action-icon">Ⓜ</span>
+  <!--<ng-container slot="header">-->
+  <ng-container ngProjectAs="header">
+    <div class="widget-title">Weather Forecast</div>
+    <div class="widget-sub-title">Currently in Vienna, Austria</div>
+  </ng-container>
+
+  <!--<app-weather-content />-->
+
+  <!--<ng-template #widgetContent>
+    <app-weather-content />
+  </ng-template>-->
+
+  <!--<ng-template appWidgetContent>
+    <app-weather-content />
+  </ng-template>-->
+
+  <app-weather-content *appWidgetContent/>
+
+</app-widget>

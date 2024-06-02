@@ -5,26 +5,24 @@ import { interval } from 'rxjs';
 @Component({
   selector: 'app-weather-content',
   standalone: true,
-  template: `
-    <div class="sky-condition">☀️</div>
-    <div class="temperature">{{temperature}}°C</div>
-  `
+  templateUrl: './weather-content.component.html'
 })
 export class WeatherContentComponent {
   lastUpdateAt: Date = new Date();
 
-  protected temperature = 21;
+  protected temperature = 22;
 
   #polling = interval(5000).pipe(takeUntilDestroyed())
 
   ngOnInit() {
     this.#polling.subscribe(() =>
-        this.lastUpdateAt = new Date()
+      this.lastUpdateAt = new Date()
     )
+    console.log('Weather Content is created...');
   }
 
   ngOnDestroy() {
-    console.log('Weather Content Is Destroyed...');
+    console.log('Weather Content is destroyed...');
   }
 
 }
